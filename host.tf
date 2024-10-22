@@ -8,3 +8,11 @@ resource "aws_instance" "web_server" {
     Name = var.web_server_name
   }
 }
+
+output "instance_ip_address" {
+    value = aws_instance.web_server.public_ip
+}
+
+output "instance_dns_address" {
+    value = aws_instance.web_server.public_dns
+}
