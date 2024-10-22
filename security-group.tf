@@ -1,5 +1,5 @@
 resource "aws_security_group" "web_server" {
-  name = "web_server"
+  name = "web_server_sg"
 
   tags = {
     Name = "Web Server SG"
