@@ -3,6 +3,8 @@ resource "aws_instance" "web_server" {
   instance_type = "t2.micro"
 
   security_groups = [aws_security_group.web_server.name]
+  
+  key_name = "vockey"
 
   tags = {
     Name = var.web_server_name
