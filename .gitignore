@@ -2,3 +2,6 @@
 .terraform.lock.hcl
 
 terraform.tfstate*
+
+ansible/inventory.ini
+
