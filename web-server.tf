@@ -14,7 +14,7 @@ resource "aws_instance" "web_server" {
 
 # Konfiguracja pliku inventory dla Ansible
 resource "local_file" "ip" {
-  content  = <<EOT
+  content  = <<-EOT
   [webservers]
   ${aws_instance.web_server.public_ip}
   EOT
